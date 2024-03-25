@@ -1,0 +1,90 @@
+print("E P I C    🪨  📄 ✂️    B A T T L E")
+print()
+print("Play as follows:")
+print()
+print("Enter your names when prompted and then select R, P, or S for Player 1 and Player 2. ") 
+print()
+print("Your anwsers will be hidden from each other. Type in your anwser and press enter, but you WON'T be able to see what you've typed. Dont be scared you got this!")
+print()
+print("The game will end once a player has won 3 times, otherwise,")
+print()
+print("LET THE BATTLE COMMENCE!!")
+print()
+
+name1 = input("Enter 1st player name: ")
+name2 = input("Enter 2nd player name: ")
+
+from getpass import getpass as input
+p1Score = 0
+p2Score = 0
+
+while True:
+  
+  print()
+  
+    
+  P1 = input("Player 1 >")
+  P2 = input("Player 2 >")
+  print()
+ 
+
+  if P1 == "r" or P1 == "R":
+    if P2 == "r" or P2 == "R":
+      print()
+      print("Welp you've done it know, you hit eachother with rocks, way to go!🧍🏻‍♀️🪨🪨🧍🏾")
+    elif P2 == "s" or P2 == "S":
+      print()
+      print("Nice,",name1, "you've smashed,", name2,"'s", "scissors✂️ to smitherins with your monstorus rock🪨")
+      p1Score += 1
+    elif P2 == "p" or P2 == "P":
+      print()
+      print("hahaha,", name1, ",", name2, "has defeated your raggedy rock🪨 with there pompus PAPER📄!!")
+      p2Score += 1
+    else:
+      ("what have you done??? that was an invalid input!")
+  
+
+  elif P1 == "s" or P1 == "S":
+    if P2 == "s" or P2 == "S":
+      print()
+      print("Stop throwing scissors at eachother!!! your gonna poke an eye out, you have come to a tie 🎀over this childs play.") 
+    elif P2 == "p" or P2 == "P":
+      print()
+      print(name1, "has cut right through your paper ✂️📃with thier scissors, better luck next time,", name2,)
+      p1Score += 1
+  
+    elif P2 == "r" or P2 == "R":
+      print()
+      print(name2, "IS VICTOURIOUS,", name1, "defeated with a rock🪨😱... do better")
+      p2Score += 1
+    else:
+      print("welp...what have you done")
+
+      
+  elif p1Score == 3:
+     print(name1, "wins with,", p1Score,"victories and", name2, "with only", p2Score, "measley victories... better luck next time", name2)
+
+  elif p2Score == 3:
+    print(name2, "wins with,", p2Score,"victories and", name1, "with only", p1Score, " measley victories better luck next time,", name1)  
+    break
+
+  elif P1 == "p" or P1 == "P":
+    if P2 == "p" or P2 == "P":
+      print()
+      print("Damn guys, throwing paper💃🏼📃📄🧍🏾 at eachother we are not in middle school, grow up and play again!")
+    elif P2 == "s" or P2 == "S":
+      print()
+      print(name2,"has caught you red scissor ✂️handed and cut your paper 📄right up!")
+      p2Score += 1
+    elif P2 == "r" or P2 == "R":
+      print()
+      print("heheheheeh,", name2, "has just thrown a rock🪨 right into you paper trap,", name1, "wins.")
+      p1Score += 1
+    else:
+      print("welp...what have you done")
+    
+    continue
+  
+  else:
+    print("Young grasshopper you have played an played, until we meet again.")
+    exit()
